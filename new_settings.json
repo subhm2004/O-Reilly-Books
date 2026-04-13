@@ -1,0 +1,80 @@
+{
+  "code-runner.executorMap": {
+    "javascript": "node",
+    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt",
+    "zig": "zig run",
+    "cpp": "cd $dir && g++ -std=c++17 $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt",
+    "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt",
+    "php": "php",
+    "python": "python -u",
+    "perl": "perl",
+    "ruby": "ruby",
+    "go": "go run",
+    "lua": "lua",
+    "groovy": "groovy",
+    "powershell": "powershell -ExecutionPolicy ByPass -File",
+    "bat": "cmd /c",
+    "shellscript": "bash",
+    "typescript": "ts-node",
+    "scala": "scala",
+    "swift": "swift",
+    "julia": "julia",
+    "crystal": "crystal",
+    "ocaml": "ocaml",
+    "r": "Rscript",
+    "rust": "cd $dir && rustc $fileName && ./$fileNameWithoutExt",
+    "dart": "dart",
+    "haskell": "runghc",
+    "nim": "nim compile --verbosity:0 --hints:off --run",
+    "lisp": "sbcl --script",
+    "v": "v run",
+    "sass": "sass --style expanded",
+    "scss": "scss --style expanded",
+    "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css"
+  },
+
+  "code-runner.runInTerminal": false,
+  "code-runner.showExecutionMessage": true,
+  "code-runner.clearPreviousOutput": true,
+
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "comment",
+          "comment.line.double-slash",
+          "comment.block.documentation",
+          "comment.block"
+        ],
+        "settings": {
+          "foreground": "#238c54"
+        }
+      }
+    ]
+  },
+
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.formatOnSave": true,
+  "editor.linkedEditing": true,
+
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-3.5-turbo",
+  "git.autofetch": true,
+
+  "python.createEnvironment.trigger": "off",
+
+  "keysound.enabled": false,
+  "terminalErrorSound.soundChoice": "aye.mp3",
+
+  "workbench.colorTheme": "GitHub Dark Default",
+
+  "claudeCode.preferredLocation": "panel",
+
+  "files.autoSave": "afterDelay",
+
+  "liveServer.settings.donotShowInfoMsg": true,
+  "workbench.settings.applyToAllProfiles": [
+
+  ]
+}
