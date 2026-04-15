@@ -4,7 +4,7 @@
     "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
     "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
     "zig": "zig run",
-    "cpp": "g++ -std=c++17 $fileName -o run && ./run",
+    "cpp": "cd $dir && g++ -std=c++17 $fileName -o tempRun && ./tempRun; rm -f tempRun",
     "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
     "php": "php",
     "python": "python -u",
@@ -59,7 +59,12 @@
     "gleam": "gleam run -m $fileNameWithoutExt",
   },
   "code-runner.runInTerminal": true,
+  "code-runner.clearPreviousOutput": true,
   "json.schemas": [
+
+
+
+
 
   
   ],
